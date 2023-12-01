@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+<script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form>
+      <button type="button" data-cmd="justifyLeft" name="active" class="mui-btn mui-btn--primary">
+        <i class="fa-solid fa-align-left"></i>
+      </button>
+      <button type="button" data-cmd="justifyCenter" name="active" class="mui-btn mui-btn--primary">
+        <i class="fa-solid fa-align-center"></i>
+      </button>
+      <button type="button" data-cmd="justifyFull" name="active" class="mui-btn mui-btn--primary">
+        <i class="fa-solid fa-align-justify"></i>
+      </button>
+      <button type="button" data-cmd="justifyRight" name="active" class="mui-btn mui-btn--primary">
+        <i class="fa-solid fa-align-right"></i>
+      </button>
+      <button type="button" data-cmd="bold" name="active" class="mui-btn mui-btn--primary">
+        <i class="fa-solid fa-bold"></i>
+      </button>
+      <button type="button" data-cmd="italic" name="active" class="mui-btn mui-btn--primary">
+        <i class="fa-solid fa-italic"></i>
+      </button>
+      <button type="button" data-cmd="underline" name="active" class="mui-btn mui-btn--primary">
+        <i class="fa-solid fa-underline"></i>
+      </button>
+      <button type="button" data-cmd="insertOrderedList" name="active" class="mui-btn mui-btn--primary">
+        <i class="fa-solid fa-list-ol"></i>
+      </button>
+      <button type="button" data-cmd="indertUnorderedList" name="active" class="mui-btn mui-btn--primary">
+        <i class="fa-solid fa-list-ul"></i>
+      </button>
+      <button type="button" data-cmd="copy" onclick="myFunction()" id="copied" class="mui-btn mui-btn--primary">Copy text</button>
+      <button type="button" data-cmd="cut" class="mui-btn mui-btn--primary">Cut</button>
+    </form>
+
+    <iframe id="output" name="textField"></iframe>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

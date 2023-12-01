@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    padding: 5px 30px;
+}
+button{
+    outline: none;
+    cursor: pointer;
+}
+.copied{
+    width: 60px;
+}
+
+#output{
+    width: 100%;
+    height: calc(100vh - 75px);
+    border: 1px solid #111;
+}
+.active{
+    border: 2px solid crimson;
+}
